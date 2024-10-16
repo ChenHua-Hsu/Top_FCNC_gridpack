@@ -12,4 +12,4 @@ define vl~ = ve~ vm~ vt~
 generate p p > t t~ [QCD]                                                                                                                             
 output ttu_notion
 
-l
+launch
