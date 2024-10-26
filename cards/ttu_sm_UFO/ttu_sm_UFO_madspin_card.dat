@@ -1,4 +1,4 @@
-import model TopFCNC_UFO-eta_hut_ProdConventions_no_c_mass --modelname
+import model TopFCNC_UFO-eta_hut_ProdConventions_no_c_mass
 set max_weight_ps_point 800
 define all = g u c d s u~ c~ d~ s~ l+ l- vl vl~
 decay t > w+ b, w+ > l+ vl NP=0
