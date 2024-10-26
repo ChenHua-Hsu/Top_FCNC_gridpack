@@ -9,5 +9,3 @@ define nubar = ve~ vm~ vt~
 
 generate p p > t t~ [QCD]
 output ttu_sm_UFO
-
-launch
