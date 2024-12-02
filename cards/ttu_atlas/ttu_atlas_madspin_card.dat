@@ -1,5 +1,5 @@
 set max_weight_ps_point 800
 
-decay t~ > c~ h
+decay t~ > u~ h
 decay t > w+ b, w+ > All All
 launch
