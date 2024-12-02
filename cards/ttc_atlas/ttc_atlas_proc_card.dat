@@ -1,0 +1,5 @@
+import model TopFCNC_ATLAS-onlyh 
+generate p p > t t~ [QCD]                                                                                                                             
+output ttc_atlas
+
+launch
