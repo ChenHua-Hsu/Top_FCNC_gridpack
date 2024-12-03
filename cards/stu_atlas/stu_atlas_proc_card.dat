@@ -1,0 +1,6 @@
+import model TopFCNC_model_ATLAS-onlyh 
+generate p p > t h $$ t~ [QCD] 
+add process p p > t~ h $$ t [QCD]                                                                                                                            
+output stu_atlas
+
+launch

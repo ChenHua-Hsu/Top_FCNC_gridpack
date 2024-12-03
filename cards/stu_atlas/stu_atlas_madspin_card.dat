@@ -1,0 +1,5 @@
+set max_weight_ps_point 800
+
+decay t~ > w- b~, w- > All All
+decay t > w+ b, w+ > All All
+launch
