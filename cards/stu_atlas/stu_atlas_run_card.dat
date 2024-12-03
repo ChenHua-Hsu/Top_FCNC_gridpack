@@ -73,7 +73,7 @@
 # shower (HERWIG6 | HERWIGPP | PYTHIA6Q | PYTHIA6PT | PYTHIA8)         *
 # WARNING: PYTHIA6PT works only for processes without FSR!!!!          *
 #***********************************************************************
-  HERWIG6   = parton_shower
+  PYTHIA8   = parton_shower
   1.0 = shower_scale_factor ! multiply default shower starting
                                   ! scale by this factor
 #***********************************************************************
@@ -83,10 +83,10 @@
 # and partons. This can be changed in SubProcesses/set_scales.f or via *
 # dynamical_scale_choice option)                                       *
 #***********************************************************************
- False    = fixed_ren_scale  ! if .true. use fixed ren scale
- False    = fixed_fac_scale  ! if .true. use fixed fac scale
- 91.118   = muR_ref_fixed    ! fixed ren reference scale 
- 91.118   = muF_ref_fixed    ! fixed fact reference scale
+ True    = fixed_ren_scale  ! if .true. use fixed ren scale
+ True    = fixed_fac_scale  ! if .true. use fixed fac scale
+ 297.5   = muR_ref_fixed    ! fixed ren reference scale 
+ 297.5   = muF_ref_fixed    ! fixed fact reference scale
  -1 = dynamical_scale_choice ! Choose one (or more) of the predefined
            ! dynamical choices. Can be a list; scale choices beyond the
            ! first are included via reweighting
@@ -133,8 +133,8 @@
 #    considerably softer than the analysis cuts.                       *
 #  - More specific cuts can be specified in SubProcesses/cuts.f        *
 #***********************************************************************
-  1.0  = jetalgo   ! FastJet jet algorithm (1=kT, 0=C/A, -1=anti-kT)
-  0.7  = jetradius ! The radius parameter for the jet algorithm
+  -1.0  = jetalgo   ! FastJet jet algorithm (1=kT, 0=C/A, -1=anti-kT)
+  0.4  = jetradius ! The radius parameter for the jet algorithm
  10.0  = ptj       ! Min jet transverse momentum
  -1.0  = etaj      ! Max jet abs(pseudo-rap) (a value .lt.0 means no cut)
 #***********************************************************************
